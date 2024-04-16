@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 11:02:09 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/16 11:09:16 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/04/16 11:15:23 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,12 @@ Fixed& Fixed::operator=(const Fixed& other) {
 }
 
 Fixed::~Fixed() {};
+
+int Fixed::getRawBits(void) const {
+  std::cout << "getRawBits member function called" << std::endl;
+  return value;
+}
+
+void Fixed::setRawBits(int const raw) {
+  value = raw;
+}
