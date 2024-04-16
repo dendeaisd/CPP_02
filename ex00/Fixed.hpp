@@ -6,12 +6,14 @@
 /*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 10:53:36 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/16 11:00:50 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/04/16 11:03:07 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FIXED_H
 # define FIXED_H
+#include <iostream>
+#include <string>
 
 class Fixed {
   int               value;
