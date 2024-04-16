@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 13:50:31 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/16 15:19:13 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/04/16 15:26:31 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,5 @@ class Fixed {
 };
 
 std::ostream& operator<<(std::ostream& os, const Fixed& number);
+
 #endif
