@@ -3,17 +3,17 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+         #
+#    By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/16 15:25:50 by fvoicu            #+#    #+#              #
-#    Updated: 2024/04/16 15:25:52 by fvoicu           ###   ########.fr        #
+#    Updated: 2024/05/12 16:37:17 by fvoicu           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	:=	out
 CC		:=	c++
 FLAGS	:=	-Wall -Wextra -Werror -std=c++98
-SRC		:=	main.cpp Fixed.cpp
+SRC		:=	main.cpp bsp.cpp Point.cpp Fixed.cpp
 OBJ		:=	$(SRC:.cpp=.o)
 
 all 	: $(NAME)

@@ -6,12 +6,13 @@
 /*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 15:26:20 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/05/12 16:44:22 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/12 16:41:19 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FIXED_H
 # define FIXED_H
+# include <iostream>
 
 class Fixed {
  private:
