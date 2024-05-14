@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 11:02:09 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/05/14 17:23:39 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/14 17:55:44 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
  * Prints a message indicating the default constructor
  * is called.
 */
-Fixed::Fixed() : value(0) {
+Fixed::Fixed() : _value(0) {
   std::cout << "Default constructor called" << std::endl;
 }
 
@@ -34,7 +34,7 @@ Fixed::Fixed() : value(0) {
  * 
  * @param other The Fixed object to copy from.
 */
-Fixed::Fixed(const Fixed& other) : value(other.value) {
+Fixed::Fixed(const Fixed& other) : _value(other._value) {
   std::cout << "Copy constructor called" << std::endl;
 }
 
@@ -51,7 +51,7 @@ Fixed::Fixed(const Fixed& other) : value(other.value) {
 Fixed& Fixed::operator=(const Fixed& other) {
   if (this != &other) {
     std::cout << "Copy assignment operator called" << std::endl;
-    this->value = other.getRawBits();
+    this->_value = other.getRawBits();
   }
   return *this;
 }
@@ -76,7 +76,7 @@ Fixed::~Fixed() {
 int Fixed::getRawBits(void) const {
   std::cout << "getRawBits member function called" \
             << std::endl;
-  return value;
+  return _value;
 }
 
 /**
@@ -89,7 +89,7 @@ int Fixed::getRawBits(void) const {
 void Fixed::setRawBits(int const raw) {
   std::cout << "setRawBits member function called" \
           << std::endl;
-  value = raw;
+  _value = raw;
 }
 
 /**
@@ -99,6 +99,6 @@ void Fixed::setRawBits(int const raw) {
  * fixed-point number and the number of fractional bits.
 */
 void Fixed::printOutput() {
-  std::cout << value << std::endl;
-  std::cout << frBits << std::endl;
+  std::cout << _value << std::endl;
+  std::cout << _frBits << std::endl;
 }

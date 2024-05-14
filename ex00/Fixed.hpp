@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 10:53:36 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/05/14 16:58:41 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/14 17:54:53 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@
 */
 class Fixed {
  private:
-  int               value;
-  static const int  frBits = 8;
+  int               _value;
+  static const int  _frBits = 8;
 
  public:
   Fixed();
