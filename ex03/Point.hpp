@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 16:19:33 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/05/12 16:37:15 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/14 22:29:56 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,14 @@
 
 class Point {
  private:
-  Fixed const x;
-  Fixed const y;
+  Fixed _x;
+  Fixed _y;
  
  public:
   Point();
   Point(float x, float y);
   Point(const Point& other);
-  Point& operator=(const Point &other);
+  Point& operator=(const Point& other);
   ~Point();
 
   float getX() const;
