@@ -6,7 +6,7 @@
 #    By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/16 13:34:21 by fvoicu            #+#    #+#              #
-#    Updated: 2024/05/13 18:25:24 by fvoicu           ###   ########.fr        #
+#    Updated: 2024/05/14 20:22:05 by fvoicu           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ $(NAME) : $(OBJ)
 	@python3 anim.py &
 	@ANIMATION_PID=$$!;
 	@$(CC) $(FLAGS) $(OBJ) -o $(NAME)
-	@sleep 2.4
+	@sleep 2.3
 	@touch stop_animation.txt
 	@wait $$ANIMATION_PID 2>/dev/null
 
