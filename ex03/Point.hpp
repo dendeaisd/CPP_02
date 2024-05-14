@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 16:19:33 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/05/14 22:29:56 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/14 22:39:07 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,14 @@
 
 #include "Fixed.hpp"
 
+/**
+ * @class Point
+ * @brief A point in 2D space with fixed-point coords.
+ * 
+ * This class provides a representation for a point in
+ * a two-dimensional plane using fixed-points numbers,
+ * allowing points to be defined, copied and manipulated.
+*/
 class Point {
  private:
   Fixed _x;
@@ -31,6 +39,7 @@ class Point {
   float getY() const;
 };
 
-bool bsp(Point const a, Point const b, Point const c, Point const point);
+bool bsp(Point const a, Point const b, Point const c, \
+        Point const point);
 
 #endif

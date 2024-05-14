@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 16:19:26 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/05/12 16:43:34 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/14 22:37:08 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ float area(const Point& p1, const Point& p2, const Point& p3) {
                      p3.getX() * (p1.getY() - p2.getY())) / 2.0);
 }
 
-bool bsp(Point const a, Point const b, Point const c, Point const point) {
+bool bsp(Point const a, Point const b, Point const c, \
+        Point const point) {
     float totalArea = area(a, b, c);
     float area1 = area(point, b, c);
     float area2 = area(a, point, c);
