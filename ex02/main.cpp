@@ -6,11 +6,10 @@
 /*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 15:26:42 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/05/14 18:46:26 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/14 22:32:00 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
 #include "Fixed.hpp"
 
 int main( void ) {
