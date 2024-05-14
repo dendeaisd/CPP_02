@@ -6,18 +6,30 @@
 /*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 13:50:31 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/05/13 16:06:36 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/14 18:13:33 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #ifndef FIXED_H
 # define FIXED_H
 
+/**
+ * @class Fixed
+ * @brief A class for reperesenting fixed-point numbers.
+ * 
+ * This class provides methods for handling fixed-point numbers
+ * with a specific number of fractional bits(8). It is written
+ * in the Orthodox Cannonical Form including a Default Constructor,
+ * a Copy Constructor, a Copy Assignment Operator and a Destructor,
+ * and methods to get and set the raw bit representation of the 
+ * number. Aditionally, it provides conversions to floating-point
+ * and integer values, as well as an overloaded operatr for the
+ * output.
+*/
 class Fixed {
  private:
-  int               value;
-  static const int  frBits = 8;
+  int               _value;
+  static const int  _frBits = 8;
 
  public:
   Fixed();
