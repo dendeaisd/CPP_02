@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 13:50:31 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/05/14 18:13:33 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/14 18:48:15 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,7 @@
  * a Copy Constructor, a Copy Assignment Operator and a Destructor,
  * and methods to get and set the raw bit representation of the 
  * number. Aditionally, it provides conversions to floating-point
- * and integer values, as well as an overloaded operatr for the
- * output.
+ * and integer values.
 */
 class Fixed {
  private:
