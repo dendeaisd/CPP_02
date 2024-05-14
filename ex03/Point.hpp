@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 16:19:33 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/05/14 22:39:07 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/14 22:51:22 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ class Point {
  private:
   Fixed _x;
   Fixed _y;
- 
+
  public:
   Point();
   Point(float x, float y);

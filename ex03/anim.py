@@ -3,90 +3,94 @@ import time
 import sys
 
 # Colors
-BLUE    = "\033[1;38;2;0;25;102m"
+BLUE    = "\033[1;34m"
+GREEN   = "\033[1;38;2;30;130;30m"
+GRASS   = "\033[1;38;2;124;252;0m"
+PURPLE  = "\033[1;38;2;128;0;128m"
+PINK    = "\033[1;38;2;255;182;193m"
 RESET   = "\033[0m"
 
 frames = [
     f"""
 
     *
-                                                  @ 
-                                     ,--          |/
-                                    (__ \__    @  |
-                                      _\  \\\_   \_|
-    ~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~_\,___\/--'-\#
+                                                  {PURPLE}@{RESET} 
+                                     {GREEN},--          {GRASS}|/{RESET}
+                                    {GREEN}(__ \__    {PINK}@  {GRASS}|{RESET}
+                                      {GREEN}_\  \\\_   {GRASS}\_|{RESET}
+    {BLUE}~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~{GRASS}_{GREEN}\,___\/{GRASS}--'-\#{RESET}
     """,
     f"""
 
                             
-        *                                         @
-                                     ,--          |/
-                                    (__ \__    @  |
-                                      _\  \\\_   \_|
-    ~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~_\,___\/--'-\#
+        *                                         {PURPLE}@{RESET}
+                                     {GREEN},--          {GRASS}|/{RESET}
+                                    {GREEN}(__ \__    {PINK}@  {GRASS}|{RESET}
+                                      {GREEN}_\  \\\_   {GRASS}\_|{RESET}
+    {BLUE}~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~{GRASS}_{GREEN}\,___\/{GRASS}--'-\#{RESET}
     """,
     f"""
 
             *                 
-                                                  @
-                                     ,--          |/
-                                    (__ \__    @  |
-                                      _\  \\\_   \_|
-    ~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~_\,___\/--'-\#
+                                                  {PURPLE}@{RESET}
+                                     {GREEN},--          {GRASS}|/{RESET}
+                                    {GREEN}(__ \__    {PINK}@  {GRASS}|{RESET}
+                                      {GREEN}_\  \\\_   {GRASS}\_|{RESET}
+    {BLUE}~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~{GRASS}_{GREEN}\,___\/{GRASS}--'-\#{RESET}
     """,
     f"""
 
                             
-                *                                 @
-                                     ,--          |/
-                                    (__ \__    @  |
-                                      _\  \\\_   \_|
-    ~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~_\,___\/--'-\#
+                *                                 {PURPLE}@{RESET}
+                                     {GREEN},--          {GRASS}|/{RESET}
+                                    {GREEN}(__ \__    {PINK}@  {GRASS}|{RESET}
+                                      {GREEN}_\  \\\_   {GRASS}\_|{RESET}
+    {BLUE}~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~{GRASS}_{GREEN}\,___\/{GRASS}--'-\#{RESET}
     """,
     f"""
 
                             
-                                                  @
-                    *                ,--          |/
-                                    (__ \__    @  |
-                                      _\  \\\_   \_|
-    ~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~_\,___\/--'-\#
+                                                  {PURPLE}@{RESET}
+                    *                {GREEN},--          {GRASS}|/{RESET}
+                                    {GREEN}(__ \__    {PINK}@  {GRASS}|{RESET}
+                                      {GREEN}_\  \\\_   {GRASS}\_|{RESET}
+    {BLUE}~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~{GRASS}_{GREEN}\,___\/{GRASS}--'-\#{RESET}
     """,
     f"""
 
                             
-                                                  @
-                          *           oo          |/
-                                    (__ \__    @  |
-                                      _\  \\\_   \_|
-    ~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~_\,___\/--'-\#
+                                                  {PURPLE}@{RESET}
+                          *           oo          {GRASS}|/{RESET}
+                                    {GREEN}(__ \__    {PINK}@  {GRASS}|{RESET}
+                                      {GREEN}_\  \\\_   {GRASS}\_|{RESET}
+    {BLUE}~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~{GRASS}_{GREEN}\,___\/{GRASS}--'-\#{RESET}
     """,
     f"""
 
                             
-                            *                     @
-                                      OO          |/
-                                    (__ \__    @  |
-                                      _\  \\\_   \_|
-    ~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~_\,___\/--'-\#
+                            *                     {PURPLE}@{RESET}
+                                      OO          {GRASS}|/{RESET}
+                                    {GREEN}(__ \__    {PINK}@  {GRASS}|{RESET}
+                                      {GREEN}_\  \\\_   {GRASS}\_|{RESET}
+    {BLUE}~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~{GRASS}_{GREEN}\,___\/{GRASS}--'-\#{RESET}
     """,
     f"""
 
                               *.
-                                `.                @
-                                    _/^^          |/
-                                    \__ \__    @  |
-                                      _\  \\\_   \_|
-    ~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~_\,___\/--'-\#
+                                `.                {PURPLE}@{RESET}
+                                    {GREEN}_/{RESET}^^          {GRASS}|/{RESET}
+                                    {GREEN}\__ \__    {PINK}@  {GRASS}|{RESET}
+                                      {GREEN}_\  \\\_   {GRASS}\_|{RESET}
+    {BLUE}~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~{GRASS}_{GREEN}\,___\/{GRASS}--'-\#{RESET}
     """,
     f"""
 
                                 
-                                                  @
-                                     ,^^          |/
-                                    (__ \__    @  |
-                                      _\  \\\_   \_|
-    ~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~_\,___\/--'-\#
+                                                  {PURPLE}@{RESET}
+                                    {GREEN} ,{RESET}^^          {GRASS}|/{RESET}
+                                    {GREEN}(__ \__    {PINK}@  {GRASS}|{RESET}
+                                      {GREEN}_\  \\\_   {GRASS}\_|{RESET}
+    {BLUE}~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~{GRASS}_{GREEN}\,___\/{GRASS}--'-\#{RESET}
     """
 ]
 
@@ -112,11 +116,11 @@ def animate():
     print(f"""
 
                                      Build complete!
-                                         /        @
-                                     ,--          |/
-                                    (__ \__    @  |
-                                      _\  \\\_   \_|
-    ~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~_\,___\/--'-\#
+                                         /        {PURPLE}@{RESET}
+                                     {GREEN},--          {GRASS}|/{RESET}
+                                    {GREEN}(__ \__    {PINK}@  {GRASS}|{RESET}
+                                      {GREEN}_\  \\\_   {GRASS}\_|{RESET}
+    {BLUE}~~~~ ~~ ~~~~~~ ~~  ~~~~~~~ ~~ ~~~{GRASS}_{GREEN}\,___\/{GRASS}--'-\#{RESET}
     """)
     sys.exit()
 
